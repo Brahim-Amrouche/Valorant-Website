@@ -1,0 +1,126 @@
+<!-- Valorant Presentation Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Sytle/Main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <!-- Navigation Bar Start -->
+        <div class="nav-bar">
+                <div id="valorant-icon">
+                   <a href="#Home" ><img src="https://pbs.twimg.com/profile_images/1235007711466491904/faou8CFf_400x400.png" alt="valorant-icon"></a>
+                </div>
+                <div id="nav-list">
+                    <ul>
+                        <li class="nav-button"><a href="#Home" class="btn btn1"> Home</a></li>
+                        <li class="nav-button"><a href="#Champs" class="btn btn2">Champions</a></li>
+                        <li class="nav-button"><a href="#Maps" class="btn btn3">Maps</a></li>
+                    </ul>
+                </div>
+        </div>
+        <!-- Navigation Bar End -->
+        
+        <!-- Home Dispaly Video Start -->
+        <div class="Display-home">
+            <div id="Home" class="Banner">
+                <video autoplay muted loop>
+                    <source src="./Sources/DUELISTS __ Official Launch Cinematic Trailer - VALORANT.mp4" type="video/mp4"> 
+                </video>
+                <div class="content">
+                    <div><a href="#Register" class="register">Register</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Home Display Video End -->
+        
+        <!-- Champ Roster Start -->
+        <div id="Champs" class="champs">
+            
+            <div class="champs-title">
+                <h1> <span class="span1">Champions</span> <span class="span2">Roster</span> </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veniam ex dolore culpa temporibus expedita repellendus maxime hic illum voluptates?</p>
+            </div>
+
+            <div class="slider">
+                <div class="slide" style="background-image: url(/Sources/Brimstone.jpg);">
+                    <div class="slide-container">
+                        <div class="caption">
+                            <h1>BRIMSTONE</h1>
+                            <P>Lorem, ipsum dolor.</P>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(/Sources/Jett.jpg);">
+                    <div class="slide-container">
+                        <div class="caption">
+                            <h1>Jett</h1>
+                            <P>Lorem, ipsum dolor.</P>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(/Sources/Phoenix.png);">
+                    <div class="slide-container">
+                        <div class="caption">
+                            <h1>Phoenix</h1>
+                            <P>Lorem, ipsum dolor.</P>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="previous"><</div>
+                <div class="next">></div>
+            </div>
+
+        </div>
+        <!-- Champ Roster End -->
+        
+        <!-- Maps Pool Start -->
+        <div class="maps-section">
+            <div class="maps-title" id="Maps">
+                <h1>MAPS <span>LIST</span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, repellendus.</p>
+            
+            </div>
+            <div class="maps" >
+                <div class="map-container">
+                    <div class="Map-Picture" style="background-image: url(/Sources/Heaven.jpg);">
+                    </div>
+                    <div class="Map-Info">
+                        <h1>Heaven</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, velit.</p>
+                    </div>
+                </div>
+                <div class="map-container" >
+                    <div class="Map-Picture" style="background-image: url(/Sources/Split.png);">
+                    </div>
+                    <div class="Map-Info">
+                        <h1>Split</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, velit.</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div class="Map-Picture" style="background-image: url(/Sources/Ascent.jpg);">
+                    </div>
+                    <div class="Map-Info">
+                        <h1>Ascent</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, velit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<script src="./Scripts/Champs.js"></script>
+</body>
+</html>
