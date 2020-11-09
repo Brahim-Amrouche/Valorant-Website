@@ -4,4 +4,6 @@ this is a Mini WEB projec where I tried my best to create an appropriate WEBSITE
 
 ## For Better Execution 
 
-1. Use VS code LIVE SERVER extension to execute the html page , as there still seems to be some view related problems , to be patched soon .
+1. Use VS code LIVE SERVER extension to execute the html page , as there still seems to be some view inconsisentcy problems , to be patched soon .
+
+2. for now it is only medium to large viewport ready
