@@ -8,7 +8,7 @@
 }
 
 body {
-  font-size: 24px;
+  font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
@@ -41,16 +41,18 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   z-index: 999;
-  overflow: hidden;
 }
 
 #nav-list {
-  position: absolute;
-  left: 70%;
+  position: relative;
+  left: 0;
   top: 0;
+  width: 80%;
+  height: 15vh;
 }
 
 #nav-list ul {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,19 +60,25 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 0 40vw;
 }
 
 #nav-list ul li {
-  margin: 10% 3%;
+  margin: 2vh 3vw;
 }
 
 .btn {
+  display: block;
+  width: 11vw;
+  height: 10vh;
+  text-align: center;
+  padding: 10% 0;
   background: #ff4654;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
-  border: 0.1vw solid white;
-  padding: 1em 1em;
+  font-size: 1vw;
+  border: 0.3vw solid white;
   -webkit-transition: 300ms all ease-in;
   transition: 300ms all ease-in;
 }
@@ -81,7 +89,7 @@ a {
 }
 
 #valorant-icon {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 }

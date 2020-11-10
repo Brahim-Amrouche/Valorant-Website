@@ -8,24 +8,31 @@
     display: flex;
     flex-direction: row;
     z-index: 999;
-    overflow: hidden;
 }
 #nav-list{
-    position: absolute;
-    left:70%;
+    position: relative;
+    left:0;
     top: 0;
-   ul{
-       
+    width: 80%;
+    height: 15vh;
+   ul{ 
+       position: absolute;
        display: flex;
        flex-direction: row;
+       padding: 0 40vw;
        li{  
-           margin: 10% 3%;  
-                
+            margin: 2vh 3vw;
+               
         }
    }
 }
 .btn{
+    display: block;
 
+    width: 11vw;
+    height: 10vh;
+    text-align: center;
+    padding: 10% 0;
     
     background:rgba(255, 70, 84,1);
     
@@ -33,9 +40,9 @@
     font-weight: bold;
     color: white;
     text-transform: uppercase;
+    font-size: 1vw;
     
-    border: 0.1vw solid white;
-    padding: 1em 1em;
+    border: 0.3vw solid white;
     transition: 300ms all ease-in;
 
 }
@@ -45,7 +52,7 @@
 }
 
 #valorant-icon{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     
