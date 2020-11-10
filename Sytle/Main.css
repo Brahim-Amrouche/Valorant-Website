@@ -193,42 +193,32 @@ a {
   width: 45%;
   z-index: 1;
   border: 8px solid #594654;
-  -webkit-animation: slide 1.2s ease;
-          animation: slide 1.2s ease;
 }
 
 .slide-container {
-  position: absolute;
+  position: relative;
+  width: 80%;
   left: 10%;
   top: 105%;
   background: #dcf0e6;
-  border: 10px solid #594654;
+  border: 1vw solid #594654;
   border-top: none;
-  width: 80%;
 }
 
 .caption {
   text-align: center;
-  font-size: 1em;
+  font-size: 1vw;
 }
 
 .caption h1 {
   font-family: 'Ubuntu', sans-serif;
   color: rgba(89, 70, 84, 0.9);
   padding-bottom: 15px;
-  -webkit-animation: CaptionText .5s ease forwards;
-          animation: CaptionText .5s ease forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
 .caption p {
   color: black;
-  font-size: 1.2em;
-  -webkit-animation: CaptionText .5s ease forwards;
-          animation: CaptionText .5s ease forwards;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  font-size: 1.2vw;
 }
 
 .controls {
@@ -240,13 +230,14 @@ a {
 buttons, .previous, .next {
   position: absolute;
   background: #101823;
-  height: 100px;
-  width: 80px;
+  height: 10vh;
+  width: 4vw;
   text-align: center;
-  font-size: 30px;
+  padding: 2vh 0;
+  font-size: 2vw;
   font-weight: bold;
-  line-height: 100px;
   color: beige;
+  z-index: 100;
   cursor: pointer;
 }
 
@@ -264,66 +255,7 @@ buttons:hover, .previous:hover, .next:hover {
 }
 
 .active {
-  z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: slide 1s ease;
-          animation: slide 1s ease;
-}
-
-@-webkit-keyframes slide {
-  0% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes slide {
-  0% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@-webkit-keyframes CaptionText {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@keyframes CaptionText {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
+  z-index: 99;
 }
 
 .maps-title {

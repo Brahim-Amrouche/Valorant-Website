@@ -40,36 +40,32 @@
     width: 45%;
     z-index: 1;
     border: 8px solid rgba(89, 70, 84,1);
-    animation: slide 1.2s ease;
         
 }
 .slide-container{
-    position: absolute;
+    position: relative;
+    width: 80%;
     left:10%;
     top: 105%;
     background: rgba(220, 240, 230,1);
-    border: 10px solid rgba(89, 70, 84,1);
+    border: 1vw solid rgba(89, 70, 84,1);
     border-top: none;
     
-    width: 80%;
+    
 }
 .caption {
     text-align: center;
-    font-size: 1em;
+    font-size: 1vw;
     h1{
         font-family: 'Ubuntu', sans-serif;
         color:rgba(89, 70, 84,0.9) ;
         
         padding-bottom: 15px;
-        animation: CaptionText .5s ease forwards;
-        animation-delay: 1s;
         
     }
     p{
         color: black;
-        font-size: 1.2em;
-        animation: CaptionText .5s ease forwards;
-        animation-delay: 1.2s;
+        font-size: 1.2vw;
     }
 }
 .controls{
@@ -79,15 +75,17 @@
 }
 // for next and previous champs
 buttons {
+    
     position: absolute;
     background: rgba(16, 24, 35,1);
-    height: 100px;
-    width: 80px;
+    height: 10vh;
+    width: 4vw;
     text-align: center;
-    font-size: 30px;
+    padding: 2vh 0;
+    font-size: 2vw;
     font-weight: bold;
-    line-height: 100px;
     color:beige;
+    z-index: 100;
     cursor: pointer;
 
     &:hover{
@@ -105,31 +103,5 @@ buttons {
     
 }
 .active{
-    z-index: 999;
-    display: flex;
-    animation: slide 1s ease;
-}
-
-@keyframes slide{
-    0%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-
-}
-@keyframes CaptionText{
-    0%{
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    50%{
-        opacity: 0.5;
-        
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0px);
-    }
+    z-index: 99;
 }
