@@ -6,12 +6,11 @@
     
     h1{
         position: absolute;
-        right: 20%;
+        right: 15%;
         top: 10%;
-        font-size: 5rem;
+        font-size: 5vw;
         color: rgba(100, 70, 84,1);
         text-align: center;
-        text-justify: initial;
         span{
             color:rgba(255, 80, 84,1);
         }
@@ -19,8 +18,8 @@
     p{
         position: absolute;
         top: 80%;
-        right: 20%;
-        font-size: 2rem;
+        right: 14%;
+        font-size: 2vw;
     }
 }
 .maps{
@@ -42,13 +41,12 @@
     top: 10%;
     left:0;
     height: 80vh;
-    width: 33%;
-    margin: 12px 0 0 12px;    
-    border: 10px solid rgba(255, 80, 84,1);
+    width: 32vw;
+    margin: 0 1vw 0 1vw;    
+    border: 1vw solid rgba(255, 80, 84,1);
    
     
     background:  rgba(220, 240, 230,0.7);
-    z-index: -1;
 }
 .Map-Picture{
     position: absolute;
@@ -62,21 +60,20 @@
 .Map-Info{
 
     position: absolute;
+    height: 16vh;
+    width:auto;
     background-color: rgba(220, 240, 230,0.7);
-    top:77%;
+    top:79%;
     text-align: center;
-    text-justify: distribute;
     z-index: 2;
-    overflow: hidden;
     h1{
-        font-size: 3rem;
+        font-size: 3vw;
         font-weight: bold;
         font-family: 'Ubuntu', sans-serif;
         color:rgba(255, 80, 84,0.6) ;
     }
     p{
         font-weight: bold;
-        font-size: 1.5rem;
-        padding: 10px;
+        font-size: 1.4vw;
     }
 }
