@@ -32,7 +32,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 15vh;
+  height: 15h;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +43,17 @@ a {
   z-index: 999;
 }
 
+@media screen and (max-width: 480px) {
+  .nav-bar {
+    position: relative;
+    height: 80vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #nav-list {
   position: relative;
   left: 0;
@@ -50,6 +61,18 @@ a {
   width: 70%;
   height: 15vh;
   margin: 0 40vw;
+}
+
+@media screen and (max-width: 480px) {
+  #nav-list {
+    position: relative;
+    width: 50vw;
+    height: 65vh;
+    left: 0;
+    top: 5vh;
+    margin: 0 26vw;
+    overflow: hidden;
+  }
 }
 
 #nav-list ul {
@@ -62,8 +85,23 @@ a {
           flex-direction: row;
 }
 
+@media screen and (max-width: 480px) {
+  #nav-list ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #nav-list ul li {
   margin: 2vh 3vw;
+}
+
+@media screen and (max-width: 480px) {
+  #nav-list ul li {
+    margin: 2vh 2.5vw;
+  }
 }
 
 .btn {
@@ -82,6 +120,20 @@ a {
   transition: 300ms all ease-in;
 }
 
+@media screen and (max-width: 480px) {
+  .btn {
+    width: 40vw;
+    height: 10vh;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .btn {
+    width: 45vw;
+  }
+}
+
 .btn:hover {
   background: white;
   color: #ff4654;
@@ -91,6 +143,14 @@ a {
   position: relative;
   top: 0;
   left: 0;
+  width: 15vw;
+  height: 15vh;
+}
+
+@media screen and (max-width: 480px) {
+  #valorant-icon {
+    left: 37%;
+  }
 }
 
 #valorant-icon img {
