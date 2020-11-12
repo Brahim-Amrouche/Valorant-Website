@@ -8,18 +8,32 @@
         position: absolute;
         right: 15%;
         top: 10%;
+        width: auto;
         font-size: 5vw;
         color: rgba(100, 70, 84,1);
         text-align: center;
+        @media screen and (max-width:480px){
+            margin-top:4vh;
+            right: 0;
+            left: 0;
+            margin: 0 30%;
+            font-size: 8vw;
+        }
         span{
             color:rgba(255, 80, 84,1);
         }
     }
     p{
         position: absolute;
+        width: 80%;
+        height: 10vh;
         top: 80%;
-        right: 14%;
+        right: 10%;
         font-size: 2vw;
+        @media screen and (max-width:480px){
+            font-weight: bold;
+            font-size: 3vw;
+        }
     }
 }
 .maps{
@@ -34,6 +48,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    @media screen and (max-width:480px){
+        height: 169vh;
+        flex-direction: column;
+    }
     
 }
 .map-container{
@@ -44,10 +62,18 @@
     width: 32vw;
     margin: 0 1vw 0 1vw;    
     border: 1vw solid rgba(255, 80, 84,1);
+    border-bottom: none;
    
     
     background:  rgba(220, 240, 230,0.7);
+    @media screen and (max-width:480px){
+        width: 100%;
+        height: 50vh;
+        top: 5vh;
+        margin: 2vh 0;
+    }
 }
+
 .Map-Picture{
     position: absolute;
     background-repeat:no-repeat ;
@@ -56,6 +82,9 @@
     height: 100%;
     width: 100%;
     z-index: 1;
+    @media screen and (max-width:480px) {
+        background-position: 50% 38%;
+    }
 }
 .Map-Info{
 
@@ -63,17 +92,28 @@
     height: 16vh;
     width:auto;
     background-color: rgba(220, 240, 230,0.7);
-    top:79%;
+    top:80%;
     text-align: center;
     z-index: 2;
+    @media screen and (max-width:480px){
+        height:22%;
+        width: 100%;
+    }
     h1{
-        font-size: 3vw;
+        font-size: 2vw;
         font-weight: bold;
         font-family: 'Ubuntu', sans-serif;
         color:rgba(255, 80, 84,0.6) ;
+        @media screen and (max-width:480px) {
+            font-size: 5vw;
+        }
     }
     p{
         font-weight: bold;
         font-size: 1.4vw;
+        @media screen and (max-width:480px) {
+            padding:1.5vh ;
+            font-size: 2.5vw;
+        }
     }
 }

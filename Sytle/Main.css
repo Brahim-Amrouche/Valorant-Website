@@ -149,7 +149,7 @@ a {
 
 @media screen and (max-width: 480px) {
   #valorant-icon {
-    left: 37%;
+    left: 39%;
   }
 }
 
@@ -277,6 +277,7 @@ a {
 @media screen and (max-width: 480px) {
   .champs-title p {
     font-size: 3vw;
+    font-weight: bold;
   }
 }
 
@@ -399,9 +400,20 @@ buttons:hover, .previous:hover, .next:hover {
   position: absolute;
   right: 15%;
   top: 10%;
+  width: auto;
   font-size: 5vw;
   color: #644654;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .maps-title h1 {
+    margin-top: 4vh;
+    right: 0;
+    left: 0;
+    margin: 0 30%;
+    font-size: 8vw;
+  }
 }
 
 .maps-title h1 span {
@@ -410,9 +422,18 @@ buttons:hover, .previous:hover, .next:hover {
 
 .maps-title p {
   position: absolute;
+  width: 80%;
+  height: 10vh;
   top: 80%;
-  right: 14%;
+  right: 10%;
   font-size: 2vw;
+}
+
+@media screen and (max-width: 480px) {
+  .maps-title p {
+    font-weight: bold;
+    font-size: 3vw;
+  }
 }
 
 .maps {
@@ -434,6 +455,16 @@ buttons:hover, .previous:hover, .next:hover {
       flex-wrap: nowrap;
 }
 
+@media screen and (max-width: 480px) {
+  .maps {
+    height: 169vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .map-container {
   position: relative;
   top: 10%;
@@ -442,7 +473,17 @@ buttons:hover, .previous:hover, .next:hover {
   width: 32vw;
   margin: 0 1vw 0 1vw;
   border: 1vw solid #ff5054;
+  border-bottom: none;
   background: rgba(220, 240, 230, 0.7);
+}
+
+@media screen and (max-width: 480px) {
+  .map-container {
+    width: 100%;
+    height: 50vh;
+    top: 5vh;
+    margin: 2vh 0;
+  }
 }
 
 .Map-Picture {
@@ -455,26 +496,52 @@ buttons:hover, .previous:hover, .next:hover {
   z-index: 1;
 }
 
+@media screen and (max-width: 480px) {
+  .Map-Picture {
+    background-position: 50% 38%;
+  }
+}
+
 .Map-Info {
   position: absolute;
   height: 16vh;
   width: auto;
   background-color: rgba(220, 240, 230, 0.7);
-  top: 79%;
+  top: 80%;
   text-align: center;
   z-index: 2;
 }
 
+@media screen and (max-width: 480px) {
+  .Map-Info {
+    height: 22%;
+    width: 100%;
+  }
+}
+
 .Map-Info h1 {
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
   color: rgba(255, 80, 84, 0.6);
 }
 
+@media screen and (max-width: 480px) {
+  .Map-Info h1 {
+    font-size: 5vw;
+  }
+}
+
 .Map-Info p {
   font-weight: bold;
   font-size: 1.4vw;
+}
+
+@media screen and (max-width: 480px) {
+  .Map-Info p {
+    padding: 1.5vh;
+    font-size: 2.5vw;
+  }
 }
 
 .footer {
