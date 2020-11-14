@@ -12,6 +12,8 @@
         font-size: 5vw;
         color: rgba(100, 70, 84,1);
         text-align: center;
+
+        // S screen
         @media screen and (max-width:480px){
             margin-top:2vh;
             right: 0;
@@ -31,6 +33,7 @@
         right: 10%;
         font-size: 2.5vw;
 
+        // S screen
         @media screen and (max-width:480px){
             font-weight: bold;
             font-size: 3.5vw;
@@ -49,6 +52,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+
+    // S screen
     @media screen and (max-width:480px){
         height: 169vh;
         flex-direction: column;
@@ -67,11 +72,14 @@
    
     
     background:  rgba(220, 240, 230,0.7);
+
+    // S screen
     @media screen and (max-width:480px){
         width: 100%;
         height: 50vh;
         top: 5vh;
         margin: 2vh 0;
+        border-bottom: none;
     }
 }
 
@@ -84,6 +92,8 @@
     height: 100%;
     width: 100%;
     z-index: 1;
+
+    // S screen
     @media screen and (max-width:480px) {
         background-position: 50% 38%;
     }
@@ -97,6 +107,8 @@
     top:80%;
     text-align: center;
     z-index: 2;
+
+    // S screen
     @media screen and (max-width:480px){
         height:22%;
         width: 100%;
@@ -106,6 +118,11 @@
         font-weight: bold;
         font-family: 'Ubuntu', sans-serif;
         color:rgba(255, 80, 84,0.6) ;
+        @media screen and (max-width:768px) {
+            font-size: 2.8vw;
+        }
+        
+        // S screen   
         @media screen and (max-width:480px) {
             font-size: 5vw;
         }
@@ -113,6 +130,12 @@
     p{
         font-weight: bold;
         font-size: 1.4vw;
+        padding:1.6vh 0;
+        @media screen and (max-width:768px) {
+            font-size: 1.7vw;
+        }
+        
+        // S screen
         @media screen and (max-width:480px) {
             padding:1.5vh ;
             font-size: 2.5vw;

@@ -10,11 +10,14 @@
     height: 100%;
 }
 .Banner video{
-    object-fit:cover;  
-    width: 100%;
+    object-fit: cover;  
+    width: 100vw;
     height: 100%;
     pointer-events: none;
     opacity: 0.9;
+    @media screen and (max-width:768px) {
+        object-fit: fill;
+    }   
 }
 .content{
     
@@ -22,7 +25,11 @@
     width: 20vw;
     top: 80%;
     left: 40%;
+    @media screen and (max-width:768px) {
+        left: 37%;
+    }   
     
+    // S screen
     @media screen and (max-width:480px){
         width: 40vw;
         left: 28%;
@@ -33,7 +40,7 @@
     background-color: rgba(255, 70, 84,1);
     width: 20vw;
     height: 20vh;
-    padding: 5vh 0;
+    padding: 6vh 0;
     
     text-align: center;
     color: white;
@@ -43,6 +50,13 @@
     font-size: 1.7vw;
     transition: 300ms all ease-in;
 
+    @media screen and (max-width:768px) {
+        width: 25vw;
+        padding: 7vh 0;
+        font-size: 2vw;
+    }   
+
+    // S screen
     @media screen and (max-width:480px){
         width: 40vw;
         height: 15vh;
